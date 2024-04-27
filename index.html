@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Gorjeta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="calculator">
+                <h3 style="text-align: center;font-weight: bold;">Cálculo de Gorjeta</h3>
+                <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);"></p>
+                <label for="amount">Quantidade</label>
+                <br>
+                <button><i class="fa solid fa-r"></i><i class="fa-solid fa-dollar-sign"></i></button><input type="number" id="amount">
+                <br>
+                <br>
+                <label for="guests">Número de Funcionários</label>
+                <br>
+                <button><i class="fas fa-male"></i></button><input type="number" id="guests"></button>
+                <br>
+                <br>
+                <label for="quality">Qualidade do Serviço</label>
+                <br>
+                <select id="quality">
+                    <option value="0.3">30% - Fora do Comum</option>
+                    <option value="0.2">20% - Ótimo</option>
+                    <option value="0.15">15% - Padrão</option>
+                    <option value="0.1">10% - Ruim</option>
+                    <option value="0.05">5% - Terrível</option>
+                </select>
+                <div style="text-align: center">
+                    <p>
+                    <p style="border-top: 2px solid rgba(211, 211, 211, 0.5);"></p>
+                    <button onclick="calculate()" style="border-radius: 5px;width:fit-content;">Calcular</button>
+                    </p>
+                </div>
+            </div>
+            <div id="tip-amount"></div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
